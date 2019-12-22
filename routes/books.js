@@ -11,7 +11,7 @@ router.get("/", ensureAuthenticated, (req, res) => {
       console.error(err);
     } else {
       // resend Books view and data here.
-      res.json(books);
+      res.render('../views/books/index', { books })
     }
   });
 });
@@ -24,7 +24,7 @@ router.get("/:id", ensureAuthenticated, (req, res) => {
       res.send(err);
     } else {
       console.log("searching for book!");
-      res.json(book);
+      res.render('../views/books/show', { book })
     }
   });
 });
