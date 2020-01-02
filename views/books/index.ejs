@@ -1,14 +1,29 @@
 <%- include ('../partials/navbar') %>
-<br>
+<br />
 <div class="container">
-    <h3>BOOKS LIST</h3>
-    <ul>
-        <li>Book 1 <small>(With Details!)</small></li>
-        <li>Book 2 <small>(With Details!)</small></li>
-        <li>Book 3 <small>(With Details!)</small></li>
-        <li>Book 4 <small>(With Details!)</small></li>
-        <li>Book 5 <small>(With Details!)</small></li>
-    </ul>
+  <h3>BOOKS LIST <i class="fa fa-book" aria-hidden="true"></i></h3>
+  <br />
+  <div class="card text-left">
+    <div class="card-body">
+      <p class="card-text">Each book has:</p>
+      <ol>
+        <li>Title</li>
+        <li>Category</li>
+        <li>etc...</li>
+      </ol>
+      <p class="card-text">
+        And many more like photo but not for all books! So, i just list title
+        here.
+      </p>
+    </div>
+  </div>
+  <br />
+  <!-- Books list goes here! -->
+  <ul>
+    <% books.forEach(function(book){ %>
+    <li>Book Title: <strong><%= book.title %></strong></li>
+    <% }); %>
+  </ul>
 </div>
-<br>
+<br />
 <%- include ('../partials/footer') %>
