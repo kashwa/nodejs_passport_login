@@ -7,6 +7,14 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "*.test.ts",
+      "db/*"
+    ],
+    "delay": "2"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
