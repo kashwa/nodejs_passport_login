@@ -27,5 +27,5 @@ Open "config/keys.js" and add your MongoDB URI, local or Atlas
 
 ### Book CRUD 📚
 
-Trying to add functionality in a new branch [book_crud](https://github.com/kashwa/nodejs_passport_login/tree/book_crud) and use login system in it.
+Trying to add functionality in a new branch book_crud and use login system in it.
 Also authorizing users before submitting action on the system
